@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 20px;
+}
+#input-el{
+    width: 100%;
+    padding: 10px;
+    border: solid 2px #5f9341;
+}
+#input-btn{
+    background-color: #5f9341;
+    border: none ;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 10px;
+    font-weight: bolder;
+}
