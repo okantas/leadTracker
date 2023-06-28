@@ -1,5 +1,5 @@
 
-let myLeads=["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
+let myLeads=[]
 
 const inputEl =document.querySelector("#input-el")
 const inputBtn = document.querySelector("#input-btn")
@@ -10,15 +10,25 @@ const ulEl = document.querySelector("#ul-el")
 inputBtn.addEventListener("click",function(){
 
     myLeads.push(inputEl.value)
-    console.log(myLeads)
-
+    inputEl.value = " "
+    renderLeads()
 })
 
-let listItems = " "
+function renderLeads(){
 
-for(let i = 0; i < myLeads.length; i++){
-     
-    listItems += "<li>"+ myLeads[i] + "</li> "
+            let listItems = " "
+
+        for(let i = 0; i < myLeads.length; i++){
+            
+            //listItems += "<li><a href ='"+ myLeads[i] +"' target = '_blank'>"+ myLeads[i] + "</a></li> "
+            listItems += `<li>
+                     <a href =' ${myLeads[i]}  ' target = '_blank'>
+                        ${myLeads[i]} 
+                    </a>
+            </li> `
+
+        }
+
+        ulEl.innerHTML = listItems
+
 }
-
-ulEl.innerHTML = listItems
