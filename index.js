@@ -1,8 +1,10 @@
 
 let myLeads=["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"]
 
-let inputEl =document.querySelector("#input-el")
-let inputBtn = document.querySelector("#input-btn")
+const inputEl =document.querySelector("#input-el")
+const inputBtn = document.querySelector("#input-btn")
+const ulEl = document.querySelector("#ul-el")
+
 
 
 inputBtn.addEventListener("click",function(){
@@ -12,6 +14,11 @@ inputBtn.addEventListener("click",function(){
 
 })
 
+let listItems = " "
+
 for(let i = 0; i < myLeads.length; i++){
-    console.log(myLeads[i])
+     
+    listItems += "<li>"+ myLeads[i] + "</li> "
 }
+
+ulEl.innerHTML = listItems
