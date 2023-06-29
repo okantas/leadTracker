@@ -20,12 +20,11 @@ function renderLeads(){
 
         for(let i = 0; i < myLeads.length; i++){
             
-            //listItems += "<li><a href ='"+ myLeads[i] +"' target = '_blank'>"+ myLeads[i] + "</a></li> "
-            listItems += `<li>
-                     <a href =' ${myLeads[i]}  ' target = '_blank'>
-                        ${myLeads[i]} 
-                    </a>
-            </li> `
+             listItems += `<li>
+                <a href = "${myLeads[i]}" target = "_blank">
+                     ${myLeads[i]}
+                </a>
+             </li>`
 
         }
 
