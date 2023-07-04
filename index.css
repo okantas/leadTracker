@@ -12,13 +12,19 @@ body{
     padding: 10px;  
     border: solid 2px #5f9341;
 }
-#input-btn{
+button{
     background-color: #5f9341;
-    border: none ;
+    border: 1px solid #5f9341 ;
     padding: 10px 20px;
     color: white;
     margin-top: 10px;
     font-weight: bolder;
+    cursor: pointer;
+}
+
+#delete-btn{
+    background-color: white;
+    color: #5f9341;
 }
 ul{
     margin-top: 20px;
